@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<title>Adapter Pattern</title>
+<note>
+<intent>
+<para>Intent Convert the interface of a class into another interface clients expect.Adapter lets classes work together that couldn't otherwise because of incompatible interfaces.</para>
+</intent>
+<motivation>
+<para>Sometimes a toolkit or class library cannot be used because its interface is 
+incompatible with the interface required by an application 
+</para>
+<para>We cannot change the library interface</para>
+<para>Even if we did have the source code, we should not change the library</para>
+</motivation>
+<applicability>
+<para>Use the Adapter pattern when: You want to use an existing class that performs similar functions but with a different interface. </para>
+</applicability>
+</note>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<title>Adapter Pattern</title>
+<note>
+	<intent>
+		<para>Compose objects into tree structures to represent partwhole or
+			parent-child hierarchies. Composite lets clients treat individual
+			objects and compositions of objects uniformly.
+	</intent>
+	<motivation>
+		<para>Many times you need to model a system that deals with
+			relationships between objects that are of the same type but on
+			different levels (for example in whole-part, parent-child, or
+			supervisor-employee, relationships.) and in your system the number of
+			levels is unknown until runtime.
+		</para>
+	</motivation>
+	<applicability>
+		<para>Use the Composite pattern when a. You want to represent
+			part-whole or parent-child hierarchies of objects b. You want clients
+			to be able to ignore the difference between compositions of objects
+			and individual objects. Clients will treat all objects in the
+			composite structure uniformly.
+		</para>
+	</applicability>
+</note>

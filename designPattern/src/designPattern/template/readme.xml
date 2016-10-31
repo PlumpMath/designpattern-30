@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<title>Template Pattern</title>
+<note>
+	<intent>
+		<para>Define the skeleton of an algorithm in an operation, deferring
+			some steps to subclasses.
+			Template Method lets subclasses redefine
+			certain steps of an algorithm
+			without changing the
+			algorithm's
+			structure.
+		</para>
+	</intent>
+	<motivation>
+		<para> Sometimes you want to specify the order of operations that a
+			method uses, but allow subclasses to provide their own
+			implementations of some of these operations
+		</para>
+	</motivation>
+	<applicability>
+		<para>Use the Template Method pattern:
+			a. To implement the invariant
+			parts of an algorithm once and leave it up
+			to subclasses to implement
+			the behavior that can vary.
+			b. To localize common behavior among
+			subclasses and place it in a common
+			class (in this case, a
+			superclass) to avoid code duplication. This is
+			a classic example of
+			“code refactoring.”
+			c. To control how subclasses extend superclass
+			operations. You can
+			define a template method that calls "hook"
+			operations at specific
+			points, thereby permitting extensions only at
+			those points. The
+			Template Method is a fundamental technique for code
+			reuse.
+		</para>
+
+	</applicability>
+</note>

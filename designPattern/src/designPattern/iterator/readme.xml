@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<title>Prototype Pattern</title>
+<note>
+	<intent>
+		<para>Provide a way to access the elements of an aggregate object
+			(collection) sequentially without exposing its underlying
+			representation
+		</para>
+	</intent>
+	<motivation>
+		<para>
+			a. An aggregate object such as a list or hash map should allow a
+			way to traverse its elements without exposing its internal structure.
+			b. It should allow different traversal methods depending on what the
+			client needs (for example by using a functor). c. It should allow
+			concurrent access by multiple threads. d. But we want to take the
+			responsibility for access and traversal out of the aggregate object
+			and put it into an Iterator object.
+		</para>
+	</motivation>
+	<applicability>
+		<para>Use the Iterator pattern: a. To support traversals of aggregate
+			objects without exposing their internal representation. b. To support
+			multiple, concurrent traversals of aggregate objects. c. To provide a
+			uniform interface for traversing different aggregate structures to
+			support polymorphic iteration.
+		</para>
+
+	</applicability>
+</note>

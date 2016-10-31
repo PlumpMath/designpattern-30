@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<title>Prototype Pattern</title>
+<note>
+	<intent>
+		<para>Avoid coupling the sender of a request to its receiver by giving
+			more than one object a chance to handle the request. Chain the
+			receiving objects and pass the request along the chain until an
+			object handles it.
+		</para>
+	</intent>
+	<motivation>
+		<para>
+			a. From the client’s perspective, a request needs to be handled.
+			b. From the handlers’ perspective, there are multiple resources with
+			different skills, different roles, or different responsibilities
+			organized in a chain structure. c. These resources only know their
+			‘successors’ (whom to pass the request to if they are not able to
+			handle it). And each resource has only one successor. d. Request
+			processing always starts from the first resource in the chain. If
+			request gets processed, the work for processing the request
+			terminates right away. If not, the request is passed to its
+			successor. e. The client always expects all requests get handled
+			somewhere in the chain.
+		</para>
+	</motivation>
+	<applicability>
+		<para>Use Chain of Responsibility:
+
+			a. When more than one object may handle a request and the actual
+			handler is not known in advance. b. When requests follow a “handle or
+			forward” model - that is, some requests can be handled where they are
+			generated while others must be forwarded to another object to be
+			handled.
+		</para>
+
+	</applicability>
+</note>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<title>Proxy Pattern</title>
+<note>
+	<intent>
+		<para>Provide a surrogate or placeholder for another object to control
+			access to it
+		</para>
+	</intent>
+	<motivation>
+		<para> To defer the full cost of its creation and initialization until
+			we actually need to use it.
+		</para>
+		<para> There are situations in which a client does not or cannot
+			reference an object directly,
+			but wants to still interact with the object
+		</para>
+		<para>A proxy object can act as the intermediary between the client
+			and the target object
+		</para>
+	</motivation>
+	<applicability>
+		<para>Remote Proxy - Provides a reference to an object located in a
+			different address space on the same or different machine
+		</para>
+		<para>Protection (Access) Proxy - Provides different clients with
+			different levels of access to a target object
+		</para>
+		<para> Cache Proxy - Provides temporary storage of the results of
+			expensive target operations so that multiple clients can share the
+			results
+		</para>
+	</applicability>
+</note>

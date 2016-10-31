@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<title>Prototype Pattern</title>
+<note>
+	<intent>
+		<para>Specify the kinds of objects to create using a prototypical
+			instance, and create new objects by copying this prototype.
+		</para>
+	</intent>
+	<motivation>
+		<para> 
+			a. The Prototype Pattern allows you to make new instances by
+			copying existing/template instances. 
+			b. When your application has to
+			create objects without knowing their type or any details of how to
+			create them. 
+			c. When creating a large/complex object that is resource
+			intensive, cloning works better than using the constructor sometimes.
+		</para>
+	</motivation>
+	<applicability>
+		<para>Use the Template Method pattern:
+			a. To implement the invariant
+			parts of an algorithm once and leave it up
+			to subclasses to implement
+			the behavior that can vary.
+			b. To localize common behavior among
+			subclasses and place it in a common
+			class (in this case, a
+			superclass)
+			to avoid code duplication. This is
+			a classic example of
+			“code
+			refactoring.”
+			c. To control how subclasses extend superclass
+			operations. You can
+			define a template method that calls "hook"
+			operations at specific
+			points, thereby permitting extensions only at
+			those points. The
+			Template Method is a fundamental technique for code
+			reuse.
+		</para>
+
+	</applicability>
+</note>
