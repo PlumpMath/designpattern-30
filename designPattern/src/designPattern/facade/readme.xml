@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<title>Template Pattern</title>
+<note>
+	<intent>
+		<para>Provide a unified interface to a set of interfaces in a
+			subsystem. Facade defines a higher-level interface that makes the
+			subsystem easier to use.
+		</para>
+	</intent>
+	<motivation>
+		<para> a. Structuring a system into subsystems helps reduce
+			complexity.
+			b. Subsystems are groups of classes, and/or other
+			subsystems.
+			c. The interface exposed by the classes in a subsystem or
+			set of
+			subsystems
+			can become quite complex.
+			d. One way to reduce this complexity is to
+			introduce a facade object
+			that provides a single,
+			simplified
+			interface to the more general
+			facilities of a subsystem.
+
+		</para>
+	</motivation>
+	<applicability>
+		<para>
+		</para>
+
+	</applicability>
+</note>

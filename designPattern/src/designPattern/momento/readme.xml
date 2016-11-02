@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<title>Template Pattern</title>
+<note>
+	<intent>
+		<para>Without violating encapsulation, capture and externalize an
+			object's internal state so that the object can be restored to this
+			state later.
+		</para>
+	</intent>
+	<motivation>
+		<para>a. Sometimes it's necessary to record the internal state of an
+			object. This is required when implementing checkpoints and undo
+			mechanisms that let users back out of tentative operations or recover
+			from errors. b. You must save state information somewhere so that you
+			can restore objects to their previous states
+		</para>
+	</motivation>
+	<applicability>
+		<para>Use the Memento pattern when a. A snapshot of (some portion of)
+			an object's state must be saved so that it can be restored to that
+			state later, and b. A direct interface to obtaining the state would
+			expose implementation details and break the object's encapsulation.
+		</para>
+
+	</applicability>
+</note>
