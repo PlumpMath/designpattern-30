@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<title>Template Pattern</title>
+<note>
+	<intent>
+		<para>Separate the construction of a complex object from its
+			representation so that the same construction process can create
+			different representations.
+		</para>
+	</intent>
+	<motivation>
+		<para>a. Your application needs to create complex objects with many
+			attributes of both primitive and reference types.
+			b. Instead of
+			having
+			a constructor that takes all of them as parameters,
+			you choose
+			a
+			step-by-step approach to construct the complex object.
+			c. You want
+			to
+			avoid creating a partially initiated object instance.
+			d. Your
+			construction process stays the same for creating a series of
+			related
+			products.
+
+		</para>
+	</motivation>
+	<applicability>
+		<para>Use the Builder pattern when:
+
+			a. the algorithm for creating a
+			complex object should be independent of
+			the parts that make up the
+			object and how they're assembled.
+			b. the construction process must
+			allow different representations for the
+			object that's constructed.
+		</para>
+
+	</applicability>
+</note>

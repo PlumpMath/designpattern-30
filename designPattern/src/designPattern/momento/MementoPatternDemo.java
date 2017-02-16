@@ -1,6 +1,7 @@
 package designPattern.momento;
 
 public class MementoPatternDemo {
+	
 	   public static void main(String[] args) {
 	   
 	      Originator originator = new Originator();

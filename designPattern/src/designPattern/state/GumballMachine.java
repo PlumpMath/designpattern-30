@@ -6,7 +6,7 @@ public class GumballMachine {
 	private State noQuarterState;
 	private State hasQuarterState;
 	private State soldState;
-	private State state; // current state 
+	private State currentState; // current state 
 	private int count = 0; //number of Gumballs available 
 	
 	public GumballMachine(int numberGumballs) { 
@@ -18,7 +18,7 @@ public class GumballMachine {
 		this.count=numberGumballs;
 		
 		if(numberGumballs>0){
-			state = noQuarterState;
+			currentState = noQuarterState;
 		}
 	
 	}
@@ -32,7 +32,7 @@ public class GumballMachine {
 	}
 	
 	public  State getCurrentState(){
-		return this.state;
+		return this.currentState;
 	}
 	
 	public  State gethasQuarterState(){
@@ -44,10 +44,10 @@ public class GumballMachine {
 	}
 	
 	public void setState(State state){
-		this.state=state;
+		this.currentState=state;
 	}
 	
 	public State getState(){
-		return this.state;
+		return this.currentState;
 	}
 }

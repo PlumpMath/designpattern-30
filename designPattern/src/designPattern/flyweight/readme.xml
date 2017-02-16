@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<title>Template Pattern</title>
+<note>
+	<intent>
+		<para>Use sharing to support large numbers of fine-grained objects
+			efficiently.
+		</para>
+	</intent>
+	<motivation>
+		<para>
+			e. Your application deals with a potentially large number of
+			objects of the same type, which may take a huge amount of memory
+			space.
+			f. For these objects, their states can be easily externalized.
+			g. For each type of objects, you can choose to process them one by
+			one, not all at once.
+			h. Performance of the application is not
+			critical sometimes.
+		</para>
+	</motivation>
+	<applicability>
+		<para>The Flyweight pattern's effectiveness depends heavily on how and
+			where it's used. Apply the Flyweight pattern when all of the
+			following are true: 
+			a. An application uses a large number of objects.
+			b. Storage costs are high because of the sheer quantity of objects.
+			c. Most object state can be made extrinsic. 
+			d. Many groups of objects may be replaced by relatively few shared objects once extrinsic state	is removed. 
+			e. Creating a new object has to be much more expensive than object retrieval from the factory 
+			(getting a shared copy from the factory involves expensive operations from a Hash Map too).  
+		</para>
+
+	</applicability>
+</note>
